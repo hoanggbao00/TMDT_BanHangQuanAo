@@ -1,0 +1,25 @@
+footer {
+	margin-bottom: 30px;
+}
+
+.footer-items {
+	display: inline-block;
+}
+
+/* contact */
+.footer-nav li,
+a {
+	line-height: 22.4px;
+	color: grey;
+	font-size: 1.3rem;
+}
+
+.footer-nav i {
+	font-size: 1.4rem;
+	color: var(--primary-color);
+	width: 20px;
+	height: 20px;
+	text-align: left;
+}
+
+/* about us */

@@ -1,0 +1,44 @@
+button,
+a {
+	border: none;
+	outline: none;
+	cursor: pointer;
+	color: #fff;
+}
+
+.btn:hover,
+a:hover {
+	color: var(--primary-color);
+}
+
+.action {
+	background-color: var(--primary-color);
+	color: #fff;
+	align-items: center;
+	display: inline-block;
+	letter-spacing: 0.25px;
+	font-family: Helvetica, sans-serif;
+	text-transform: uppercase;
+	min-width: 80px;
+	border-radius: 25px;
+	line-height: 25px;
+	font-weight: 500;
+	font-size: 1.8rem;
+	cursor: pointer;
+}
+
+.action.btn {
+	padding: 8px 20px;
+	font-size: 1.4rem;
+	font-weight: bold;
+}
+
+.action.btn:hover {
+	background-color: var(--primary-color-hover);
+	color: #fff;
+}
+
+.action.title {
+	padding: 5px 20px;
+	border-radius: 50px;
+}

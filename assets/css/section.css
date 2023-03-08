@@ -1,0 +1,412 @@
+/* start big image */
+#big-image {
+	width: 100%;
+	overflow: hidden;
+}
+
+#big-image img {
+	width: 100%;
+}
+/* end big image */
+
+/* start policy section*/
+#policy {
+	height: 100px;
+	margin-top: 10px;
+}
+
+.policy-wrap {
+	height: 100%;
+	align-items: center;
+	justify-content: space-between;
+	margin: unset;
+}
+
+.policy-items {
+	width: 250px;
+}
+
+.policy-items .icon {
+	display: inline-block;
+	background-color: var(--primary-color);
+	color: #fff;
+	border-radius: 50%;
+	width: 40px;
+	height: 100%;
+	text-align: center;
+	font-size: 2.5rem;
+	line-height: 40px;
+}
+
+.policy-items:first-of-type .icon {
+	background-color: transparent;
+	color: var(--primary-color);
+	font-size: 3rem;
+}
+
+.policy-items .text {
+	display: inline-block;
+	margin-left: 5px;
+	height: 40px;
+	margin-top: 5px;
+}
+
+.policy-items a {
+	color: #000;
+	font-weight: normal;
+	font-size: 1.3rem;
+}
+.policy-items:hover a {
+	color: var(--primary-color);
+}
+
+.policy-items span {
+	font-size: 1.1rem;
+	color: grey;
+}
+
+/* end policy */
+
+/* start product section */
+#product {
+	margin-top: 10px;
+}
+
+.product-items {
+	position: relative;
+	height: 200px;
+	border: 1px dashed grey;
+	border-radius: 5px;
+	padding: 10px;
+}
+
+.product-items:hover {
+	border-color: black;
+	border-width: 2px;
+}
+
+/* title block */
+.title-block {
+	height: 35px;
+	position: relative;
+	margin-bottom: 10px;
+}
+
+.title-block * {
+	display: inline-block;
+}
+
+.title-block .title::before {
+	content: '';
+	position: absolute;
+	top: 50%;
+	height: 2px;
+	width: calc(100% - 100px);
+	background-color: var(--primary-color);
+	z-index: -1;
+}
+
+.title-nav {
+	position: absolute;
+	right: 0;
+	top: 2px;
+}
+
+.title-action {
+	border: 1px solid grey;
+	border-radius: 50%;
+	padding: 3px 8px;
+	margin-right: 5px;
+	cursor: pointer;
+}
+
+.title-action i {
+	font-size: 2rem;
+	color: grey;
+	text-align: center;
+}
+
+.title-action:hover i {
+	color: var(--primary-color);
+}
+
+/* product block */
+.product-items {
+	margin-top: 10px;
+}
+
+/* product img */
+.product-img {
+	height: 170px;
+	display: inline-block;
+}
+
+/* product info */
+.product-info {
+	width: 50%;
+	display: inline-block;
+	margin-left: 10px;
+	height: 100%;
+	overflow: hidden;
+}
+
+.product-name {
+	display: -webkit-box;
+	letter-spacing: 0.3px;
+	font-size: 1.5rem;
+	line-height: 20px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+
+.product-name a {
+	color: #000;
+	font-weight: 600;
+	letter-spacing: 0.25px;
+}
+
+/* price */
+.price-box {
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
+.price-box span {
+	font-weight: bold;
+	font-size: 1.4rem;
+	margin-right: 20px;
+}
+
+.price {
+	color: var(--primary-color);
+}
+
+.old-price {
+	color: grey;
+	text-decoration: line-through;
+}
+
+.price-box span::after {
+	content: '₫';
+}
+
+/* desc */
+.product-desc span {
+	display: -webkit-box;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	font-size: 1.2rem;
+	color: grey;
+	letter-spacing: 0.5px;
+	word-spacing: 2px;
+	line-height: 22px;
+}
+
+/* product action */
+.product-action {
+	margin-top: 5px;
+}
+
+.product-action button {
+	width: 30px;
+	height: 30px;
+	background-color: transparent;
+	border: 1px solid grey;
+	border-radius: 5px;
+	margin-right: 5px;
+	color: grey;
+	font-size: 1.6rem;
+}
+
+.product-action button:hover {
+	color: #fff;
+	background-color: var(--primary-color);
+	border: none;
+}
+
+/* product discount */
+.product-discount {
+	position: absolute;
+	top: 15%;
+	background-color: var(--primary-color);
+	color: #fff;
+	font-size: 1.8rem;
+	padding: 5px 10px;
+}
+/* end product */
+
+/* start shipping section */
+#shipping {
+	margin-top: 10px;
+}
+
+#shipping img {
+	width: 100%;
+}
+/* end shipping */
+
+/* start collection section */
+#collection {
+	background-image: url('../img/bg.webp');
+	height: 400px;
+}
+
+#collection .collection-wrap {
+	background-color: #fff;
+	height: 300px;
+	justify-content: center;
+	gap: 25px;
+	margin-top: 100px;
+}
+
+.collection-items {
+	position: relative;
+	height: 100%;
+	margin: 0;
+	align-items: center;
+}
+
+.collection-items img {
+	height: 90%;
+}
+
+.collection-link {
+	position: absolute;
+	z-index: 1;
+	background-color: #fff;
+	bottom: 5%;
+	left: 50%;
+	transform: translateX(-50%);
+	text-transform: uppercase;
+	color: #000;
+	padding: 5px 10px;
+	font-size: 1.6rem;
+	transition: bottom 0.2s linear;
+}
+
+.collection-items:hover .collection-link {
+	bottom: 45%;
+}
+
+/* end collection section */
+
+/* start box image seciton */
+#box-image {
+	margin-top: 10px;
+	height: 400px;
+	padding: 20px;
+}
+
+.box-wrap {
+	align-items: center;
+	justify-content: center;
+}
+
+.box-items img {
+	width: 350px;
+	height: 350px;
+	object-fit: contain;
+}
+
+.box-items {
+	position: relative;
+	overflow: hidden;
+}
+
+.box-items a::before,
+.box-items a::after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+	opacity: 0.1;
+	z-index: 2;
+}
+.box-items a::after {
+	left: -100%;
+	top: -100%;
+	transition: top 0.2s linear, left 0.2s linear;
+}
+.box-items a::before {
+	right: -100%;
+	bottom: -100%;
+	transition: bottom 0.2s linear, right 0.2s linear;
+}
+
+.box-items:hover a::before {
+	right: 0;
+	bottom: 0;
+}
+.box-items:hover a::after {
+	left: 0;
+	top: 0;
+}
+/* end box image seciton */
+
+/* start news letter seciton */
+#news-letter {
+	height: 60px;
+}
+
+.news-title {
+	font-weight: 500;
+	font-size: 1.6rem;
+	text-align: left;
+	line-height: 60px;
+	text-transform: uppercase;
+}
+
+.input-wrap {
+	height: 100%;
+	position: relative;
+	line-height: 60px;
+}
+
+.input-wrap input {
+	height: 40px;
+	border-radius: 25px;
+	border: 1px solid grey;
+	outline: none;
+	padding-left: 20px;
+	padding-right: 120px;
+	font-size: 1.7rem;
+	width: 80%;
+}
+
+.input-wrap button {
+	position: absolute;
+	right: 100px;
+	top: 50%;
+	transform: translateY(-55%);
+}
+
+.social-wrap {
+	justify-content: space-around;
+	align-items: center;
+}
+
+.social i {
+	border: 1px solid grey;
+	border-radius: 50%;
+	font-size: 2rem;
+	color: grey;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	transition: color 0.1s linear;
+	cursor: pointer;
+}
+
+.social i:hover {
+	color: #fff;
+	background-color: var(--primary-color);
+	border: none;
+}
+
+/* end box news letter seciton */

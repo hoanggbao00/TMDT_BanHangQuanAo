@@ -1,0 +1,295 @@
+#modal-form {
+	display: none;
+	visibility: hidden;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.4);
+	z-index: 99;
+	overflow: auto;
+}
+
+#user-form {
+	display: none;
+	visibility: hidden;
+	width: 100%;
+}
+
+#modal-form.show,
+#user-form.show,
+#product-modal.show {
+	display: block;
+	visibility: visible;
+}
+
+.modal-wrap {
+	position: relative;
+	width: 500px;
+	min-height: 300px;
+	background-color: #fff;
+	border-radius: 10px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 10px;
+}
+
+.modal-wrap.user {
+	width: 400px;
+}
+.modal-wrap.product {
+	width: 600px;
+}
+
+.modal-title {
+	font-weight: bold;
+	line-height: 30px;
+}
+
+.modal-form {
+	width: 100%;
+}
+
+.modal-form label {
+	display: inline-block;
+	font-size: 1.6rem;
+	margin-top: 10px;
+}
+
+.modal-form input {
+	width: 100%;
+	margin-top: 3px;
+	outline: none;
+	border-radius: 8px;
+	border: 1px solid grey;
+	height: 40px;
+	padding-left: 10px;
+}
+
+#user-form input + p.error {
+	color: red;
+}
+
+.account-more {
+	text-align: right;
+	color: grey;
+	font-size: 1rem;
+}
+
+.account-more span {
+	font-size: 1rem;
+	color: var(--primary-color);
+	cursor: pointer;
+}
+.account-more span:hover {
+	color: var(--primary-color-hover);
+}
+
+#modal-form .modal-btn {
+	display: block;
+	font-size: 1.5rem;
+	padding: 5px;
+	width: 60%;
+	margin: 10px auto;
+}
+
+.social-login {
+	margin: 0 auto;
+	margin-top: 10px;
+	height: 30px;
+	width: 150px;
+	padding: 5px;
+	border: 1px solid grey;
+	cursor: pointer;
+	color: #fff;
+}
+
+.social-login i {
+	width: 15px;
+	height: 15px;
+	line-height: 15px;
+	font-size: 1.2rem;
+	text-align: center;
+}
+
+.social-login span {
+	font-weight: bold;
+}
+
+.modal-form label[name='phone'],
+.modal-form input[name='phone'],
+#product-modal {
+	display: none;
+	visibility: hidden;
+}
+
+.google {
+	background-color: #2fc44f;
+}
+
+.google:hover {
+	background-color: #239c3d;
+}
+
+.facebook {
+	background-color: rgb(33, 107, 247);
+}
+.facebook:hover {
+	background-color: rgb(9, 80, 211);
+}
+
+hr {
+	margin: 10px 10px;
+}
+
+.modal-back {
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	width: 30px;
+	height: 30px;
+	font-size: 1.6rem;
+	cursor: pointer;
+}
+
+.modal-back:hover {
+	color: var(--primary-color);
+}
+
+.modal-form label[name='phone'].show,
+.modal-form input[name='phone'].show {
+	display: block;
+	visibility: visible;
+}
+
+/* product */
+#product-modal {
+	width: 800px;
+	display: none;
+	padding: 10px;
+	padding-top: 30px;
+}
+
+#product-modal .product-img {
+	width: 100%;
+	height: 300px;
+}
+
+#product-modal .product-img img {
+	width: 250px;
+	height: 300px;
+	margin-left: 10px;
+	object-fit: cover;
+}
+
+.feedback-img {
+	height: 60px;
+}
+
+.feedback-img img {
+	width: 100%;
+	height: 100%;
+}
+
+.status {
+	color: grey;
+	font-size: 1.5rem;
+	line-height: 22px;
+}
+
+.status span {
+	color: var(--primary-color);
+	font-weight: bold;
+}
+
+.brand,
+.type {
+	color: grey;
+	line-height: 22px;
+	font-size: 1.3rem;
+}
+
+.brand span,
+.type span {
+	font-weight: bold;
+}
+
+.modal-price-box {
+	border-top: 1px solid grey;
+	border-bottom: 1px solid grey;
+	margin: 10px 0;
+	padding: 10px 0;
+}
+
+.modal-price-box .price {
+	font-size: 1.7rem;
+	font-weight: bold;
+}
+
+.modal-price-box .old-price {
+	margin-top: 5px;
+	text-decoration: none;
+}
+
+.modal-price-box .old-price span:first-of-type {
+	text-decoration: line-through;
+}
+
+.modal-price-box .old-price span:last-of-type {
+	color: var(--primary-color);
+	font-weight: bold;
+}
+
+#product-modal .product-desc {
+	letter-spacing: 0.2px;
+	font-size: 1.3rem;
+	margin: 5px 0;
+	color: grey;
+	line-height: 1.8rem;
+}
+
+.product-size {
+	margin: 10px 0;
+}
+
+.product-size .size {
+	display: inline-block;
+	padding: 5px;
+	border: 1px solid grey;
+	border-radius: 5px;
+	width: 30px;
+	height: 30px;
+	line-height: 20px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.size.selected {
+	border: 2px solid var(--primary-color);
+}
+
+.modal-product-action {
+	margin-top: 20px;
+}
+
+.modal-product-action label {
+	font-weight: bold;
+	font-size: 1.3rem;
+}
+
+.modal-product-action input {
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	outline: none;
+	margin-left: 5px;
+	border: 1px solid black;
+	border-radius: 5px;
+}
+
+.modal-product-action button {
+	border-radius: 5px;
+	margin-left: 5px;
+}

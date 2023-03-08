@@ -1,0 +1,52 @@
+.float-items {
+	position: fixed;
+	cursor: pointer;
+}
+
+.float-items.bottom {
+	bottom: 0;
+}
+
+#fav-customer {
+	bottom: 30px;
+	left: 30px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 1.6rem;
+	font-weight: bold;
+	color: #fff;
+	padding-left: 12px;
+	padding-right: 12px;
+	background-color: var(--primary-color);
+	border-radius: 25px;
+	overflow: hidden;
+}
+
+#zalo {
+	right: 50px;
+	bottom: 50px;
+}
+
+#to-top {
+	display: none;
+	visibility: hidden;
+	background-color: var(--primary-color);
+	color: #fff;
+	border-radius: 50%;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 1.3rem;
+	text-align: center;
+	right: 10px;
+	bottom: 10px;
+}
+
+#to-top.show {
+	display: block;
+	visibility: visible;
+}
+
+#to-top:hover {
+	background-color: var(--primary-color-hover);
+}

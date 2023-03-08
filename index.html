@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- css -->
+		<link rel="stylesheet" href="./assets/css/commom.css" />
+
+		<!-- font -->
+		<!-- <link
+			rel="stylesheet"
+			href="./assets/font/fontawesome-5.15.4/css/all.min.css"
+		/> -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+			integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<title>Little Swwet Girls</title>
+	</head>
+	<body>
+		<div class="main">
+			<!-- start header -->
+			<header>
+				<div class="header__top">
+					<div class="text text-center">
+						<p>FREESHIPPING cho đơn hàng trên <b>749K</b></p>
+					</div>
+					<div class="user">
+						<a
+							onclick="openModal('user','sign-in')"
+							id="sign-in-btn"
+							href="#"
+							class="icon"
+						>
+							<i class="fas fa-sign-out-alt"></i>
+							Đăng nhập
+						</a>
+						<a
+							onclick="openModal('user','sign-up')"
+							id="create-btn"
+							href="#"
+							class="icon"
+						>
+							<i class="fas fa-user-plus"></i>
+							Đăng ký
+						</a>
+					</div>
+				</div>
+				<div class="row header__bottom">
+					<div class="header--logo col c-2">
+						<img src="./assets/img/logo.png" alt="logo" />
+					</div>
+					<ul id="nav" class="row col c-8">
+						<li>
+							<a class="nav-link" href="#"
+								>Sản phẩm | mua sắm ngay
+								<i class="fas fa-angle-right"></i>
+							</a>
+							<ul class="dropdown-wrap">
+								<li class="dropdown-items"><a href="">Tất cả sản phẩm</a></li>
+								<li class="dropdown-items"><a href="">Áo thun</a></li>
+								<li class="dropdown-items"><a href="">Quần jeans</a></li>
+								<li class="dropdown-items"><a href="">Váy</a></li>
+							</ul>
+						</li>
+						<li>
+							<a class="nav-link" href="#"
+								>Sale
+								<i class="fas fa-angle-right"></i>
+							</a>
+							<ul class="dropdown-wrap">
+								<li class="dropdown-items"><a href="">Tất cả sản phẩm</a></li>
+								<li class="dropdown-items"><a href="">Áo thun</a></li>
+								<li class="dropdown-items"><a href="">Quần jeans</a></li>
+								<li class="dropdown-items"><a href="">Váy</a></li>
+							</ul>
+						</li>
+						<li>
+							<a class="nav-link" href="#"
+								>About
+								<i class="fas fa-angle-right"></i>
+							</a>
+							<ul class="dropdown-wrap">
+								<li class="dropdown-items"><a href="">Tất cả sản phẩm</a></li>
+								<li class="dropdown-items"><a href="">Áo thun</a></li>
+								<li class="dropdown-items"><a href="">Quần jeans</a></li>
+								<li class="dropdown-items"><a href="">Váy</a></li>
+							</ul>
+						</li>
+					</ul>
+					<div class="header--quick-access row col c-2">
+						<div class="fav">
+							<i class="far fa-heart"></i>
+						</div>
+						<div class="cart">
+							<i class="fas fa-cart-plus"></i>
+							<span class="cart-count">0</span>
+						</div>
+						<div class="search">
+							<input
+								type="text"
+								id="search-bar"
+								placeholder="Tìm kiếm sản phẩm"
+							/>
+							<i class="fas fa-search"></i>
+						</div>
+					</div>
+				</div>
+			</header>
+			<!-- end header -->
+
+			<!-- big image -->
+			<section id="big-image">
+				<img
+					src="./assets/img/banner.jpg"
+					tooltip="mua đi mua điiii"
+					alt="banner.jpg"
+				/>
+			</section>
+
+			<!-- policy -->
+			<section id="policy" class="grid wide">
+				<div class="policy-wrap row">
+					<div class="policy-items">
+						<div class="icon"><i class="fas fa-home"></i></div>
+						<div class="text">
+							<h3><a href="#">Official Website</a></h3>
+							<span>Sản phẩm chính hãng</span>
+						</div>
+					</div>
+					<div class="policy-items">
+						<div class="icon"><i class="fas fa-shopping-bag"></i></div>
+						<div class="text">
+							<h3><a href="#">Sweet Girls - ShopeeMall</a></h3>
+							<span>Gian hàng chính hãng tại Shopee</span>
+						</div>
+					</div>
+					<div class="policy-items">
+						<div class="icon"><i class="fas fa-shopping-bag"></i></div>
+						<div class="text">
+							<h3><a href="#">Sweet Girls - LazMall</a></h3>
+							<span>Gian hàng chính hãng tại LazMall</span>
+						</div>
+					</div>
+					<div class="policy-items">
+						<div class="icon"><i class="fas fa-phone-alt"></i></div>
+						<div class="text">
+							<h3><a href="#">Hotline</a></h3>
+							<span>Hỗ trợ nhanh: 0362555500</span>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- product -->
+			<section id="product" class="grid wide row">
+				<!-- essentials -->
+				<div class="product-wrap col c-4">
+					<div class="title-block">
+						<h3 class="title action">essentials</h3>
+						<div class="title-nav">
+							<div class="title-action prev">
+								<i class="fas fa-angle-left"></i>
+							</div>
+							<div class="title-action next">
+								<i class="fas fa-angle-right"></i>
+							</div>
+						</div>
+					</div>
+					<!-- product 1 -->
+					<div class="product-block">
+						<div class="product-items">
+							<img src="./assets/img/aophong2.png" class="product-img" />
+							<div class="product-info">
+								<h3 class="product-name">
+									<a href="#">Áo polo dáng rộng Coffee</a>
+								</h3>
+								<div class="price-box">
+									<span class="price">125.000</span>
+									<span class="old-price">150.000</span>
+								</div>
+								<div class="product-desc">
+									<span
+										>Áo polo dáng rộng Coffe là một sản phẩm basic cao cấp và
+										chất lượng, với hoạ tiết thêu xù hình ly coffe một cách tinh
+									</span>
+								</div>
+								<div class="product-action">
+									<button class="add-to-cart">
+										<i class="fas fa-cart-plus"></i>
+									</button>
+									<button class="detail" onclick="openModal('product','')">
+										<i class="fas fa-info"></i>
+									</button>
+								</div>
+							</div>
+							<div class="product-discount">- 66%</div>
+						</div>
+					</div>
+					<!-- product 2 -->
+					<div class="product-block">
+						<div class="product-items">
+							<img src="./assets/img/aophong2.png" class="product-img" />
+							<div class="product-info">
+								<h3 class="product-name">
+									<a href="#">Áo polo dáng rộng Coffee</a>
+								</h3>
+								<div class="price-box">
+									<span class="price">125.000</span>
+									<span class="old-price">150.000</span>
+								</div>
+								<div class="product-desc">
+									<span
+										>Áo polo dáng rộng Coffe là một sản phẩm basic cao cấp và
+										chất lượng, với hoạ tiết thêu xù hình ly coffe một cách tinh
+									</span>
+								</div>
+								<div class="product-action">
+									<button class="add-to-cart">
+										<i class="fas fa-cart-plus"></i>
+									</button>
+									<button class="detail" onclick="openModal('product','')">
+										<i class="fas fa-info"></i>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- product 3 -->
+					<div class="product-block">
+						<div class="product-items">
+							<img src="./assets/img/aophong2.png" class="product-img" />
+							<div class="product-info">
+								<h3 class="product-name">
+									<a href="#">Áo polo dáng rộng Coffee</a>
+								</h3>
+								<div class="price-box">
+									<span class="price">125.000</span>
+									<span class="old-price">150.000</span>
+								</div>
+								<div class="product-desc">
+									<span
+										>Áo polo dáng rộng Coffe là một sản phẩm basic cao cấp và
+										chất lượng, với hoạ tiết thêu xù hình ly coffe một cách tinh
+									</span>
+								</div>
+								<div class="product-action">
+									<button class="add-to-cart">
+										<i class="fas fa-cart-plus"></i>
+									</button>
+									<button class="detail" onclick="openModal('product','')">
+										<i class="fas fa-info"></i>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- end essentials -->
+				<!-- mix&match accessories -->
+				<div class="product-wrap col c-4">
+					<div class="title-block">
+						<h3 class="title action">mix&match accessories</h3>
+						<div class="title-nav">
+							<div class="title-action prev">
+								<i class="fas fa-angle-left"></i>
+							</div>
+							<div class="title-action next">
+								<i class="fas fa-angle-right"></i>
+							</div>
+						</div>
+					</div>
+					<!-- product 1 -->
+					<div class="product-block">
+						<div class="product-items">
+							<img src="./assets/img/aophong2.png" class="product-img" />
+							<div class="product-info">
+								<h3 class="product-name">
+									<a href="#">Áo polo dáng rộng Coffee</a>
+								</h3>
+								<div class="price-box">
+									<span class="price">125.000</span>
+									<span class="old-price">150.000</span>
+								</div>
+								<div class="product-desc">
+									<span
+										>Áo polo dáng rộng Coffe là một sản phẩm basic cao cấp và
+										chất lượng, với hoạ tiết thêu xù hình ly coffe một cách tinh
+									</span>
+								</div>
+								<div class="product-action">
+									<button class="add-to-cart">
+										<i class="fas fa-cart-plus"></i>
+									</button>
+									<button class="detail" onclick="openModal('product','')">
+										<i class="fas fa-info"></i>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- product 2 -->
+					<div class="product-block">
+						<div class="product-items">
+							<img src="./assets/img/aophong2.png" class="product-img" />
+							<div class="product-info">
+								<h3 class="product-name">
+									<a href="#">Áo polo dáng rộng Coffee</a>
+								</h3>
+								<div class="price-box">
+									<span class="price">125.000</span>
+									<span class="old-price">150.000</span>
+								</div>
+								<div class="product-desc">
+									<span
+										>Áo polo dáng rộng Coffe là một sản phẩm basic cao cấp và
+										chất lượng, với hoạ tiết thêu xù hình ly coffe một cách tinh
+									</span>
+								</div>
+								<div class="product-action">
+									<button class="add-to-cart">
+										<i class="fas fa-cart-plus"></i>
+									</button>
+									<button class="detail" onclick="openModal('product','')">
+										<i class="fas fa-info"></i>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- product 3 -->
+					<div class="product-block">
+						<div class="product-items">
+							<img src="./assets/img/aophong2.png" class="product-img" />
+							<div class="product-info">
+								<h3 class="product-name">
+									<a href="#">Áo polo dáng rộng Coffee</a>
+								</h3>
+								<div class="price-box">
+									<span class="price">125.000</span>
+									<span class="old-price">150.000</span>
+								</div>
+								<div class="product-desc">
+									<span
+										>Áo polo dáng rộng Coffe là một sản phẩm basic cao cấp và
+										chất lượng, với hoạ tiết thêu xù hình ly coffe một cách tinh
+									</span>
+								</div>
+								<div class="product-action">
+									<button class="add-to-cart">
+										<i class="fas fa-cart-plus"></i>
+									</button>
+									<button class="detail" onclick="openModal('product','')">
+										<i class="fas fa-info"></i>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- end mix&match accessories -->
+				<!-- best-seller -->
+				<div class="product-wrap col c-4">
+					<div class="title-block">
+						<h3 class="title action">best-seller</h3>
+						<div class="title-nav">
+							<div class="title-action prev">
+								<i class="fas fa-angle-left"></i>
+							</div>
+							<div class="title-action next">
+								<i class="fas fa-angle-right"></i>
+							</div>
+						</div>
+					</div>
+					<!-- product 1 -->
+					<div class="product-block">
+						<div class="product-items">
+							<img src="./assets/img/aophong2.png" class="product-img" />
+							<div class="product-info">
+								<h3 class="product-name">
+									<a href="#">Áo polo dáng rộng Coffee</a>
+								</h3>
+								<div class="price-box">
+									<span class="price">125.000</span>
+									<span class="old-price">150.000</span>
+								</div>
+								<div class="product-desc">
+									<span
+										>Áo polo dáng rộng Coffe là một sản phẩm basic cao cấp và
+										chất lượng, với hoạ tiết thêu xù hình ly coffe một cách tinh
+									</span>
+								</div>
+								<div class="product-action">
+									<button class="add-to-cart">
+										<i class="fas fa-cart-plus"></i>
+									</button>
+									<button class="detail" onclick="openModal('product','')">
+										<i class="fas fa-info"></i>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- product 2 -->
+					<div class="product-block">
+						<div class="product-items">
+							<img src="./assets/img/aophong2.png" class="product-img" />
+							<div class="product-info">
+								<h3 class="product-name">
+									<a href="#">Áo polo dáng rộng Coffee</a>
+								</h3>
+								<div class="price-box">
+									<span class="price">125.000</span>
+									<span class="old-price">150.000</span>
+								</div>
+								<div class="product-desc">
+									<span
+										>Áo polo dáng rộng Coffe là một sản phẩm basic cao cấp và
+										chất lượng, với hoạ tiết thêu xù hình ly coffe một cách tinh
+									</span>
+								</div>
+								<div class="product-action">
+									<button class="add-to-cart">
+										<i class="fas fa-cart-plus"></i>
+									</button>
+									<button class="detail" onclick="openModal('product','')">
+										<i class="fas fa-info"></i>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- product 3 -->
+					<div class="product-block">
+						<div class="product-items">
+							<img src="./assets/img/aophong2.png" class="product-img" />
+							<div class="product-info">
+								<h3 class="product-name">
+									<a href="#">Áo polo dáng rộng Coffee</a>
+								</h3>
+								<div class="price-box">
+									<span class="price">125.000</span>
+									<span class="old-price">150.000</span>
+								</div>
+								<div class="product-desc">
+									<span
+										>Áo polo dáng rộng Coffe là một sản phẩm basic cao cấp và
+										chất lượng, với hoạ tiết thêu xù hình ly coffe một cách tinh
+									</span>
+								</div>
+								<div class="product-action">
+									<button class="add-to-cart">
+										<i class="fas fa-cart-plus"></i>
+									</button>
+									<button class="detail" onclick="openModal('product','')">
+										<i class="fas fa-info"></i>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- end best-seller -->
+			</section>
+
+			<!-- shipping -->
+			<section id="shipping" class="grid wide">
+				<img src="./assets/img/shipping.webp" />
+			</section>
+
+			<!-- collection -->
+			<section id="collection" class="grid">
+				<div class="grid wide row collection-wrap">
+					<div class="collection-items row">
+						<img src="./assets/img/aophong3.png" class="collection-img" />
+						<a href="#" class="collection-link">polo</a>
+					</div>
+					<div class="collection-items row">
+						<img src="./assets/img/aophong3.png" class="collection-img" />
+						<a href="#" class="collection-link">polo</a>
+					</div>
+					<div class="collection-items row">
+						<img src="./assets/img/aophong3.png" class="collection-img" />
+						<a href="#" class="collection-link">polo</a>
+					</div>
+					<div class="collection-items row">
+						<img src="./assets/img/aophong3.png" class="collection-img" />
+						<a href="#" class="collection-link">polo</a>
+					</div>
+				</div>
+			</section>
+
+			<!-- box-image -->
+			<section id="box-image">
+				<div class="box-wrap grid wide row">
+					<div class="box-items col c-4">
+						<a href="#" class="box-link">
+							<img src="./assets/img/quan1.png" />
+						</a>
+					</div>
+					<div class="box-items col c-4">
+						<a href="#" class="box-link">
+							<img src="./assets/img/quan1.png" />
+						</a>
+					</div>
+					<div class="box-items col c-4">
+						<a href="#" class="box-link">
+							<img src="./assets/img/quan1.png" />
+						</a>
+					</div>
+				</div>
+			</section>
+
+			<!-- news-letter -->
+			<section id="news-letter">
+				<div class="news-wrap grid wide row">
+					<h3 class="news-title col c-3">Đăng ký nhận tin</h3>
+					<form action="" class="input-wrap col c-5">
+						<input
+							type="email"
+							name="email"
+							id="email"
+							placeholder="Nhập địa chỉ Email"
+							required
+						/>
+						<button type="submit" class="action btn">đăng ký</button>
+					</form>
+					<div class="social-wrap col c-4 row">
+						<h3 class="news-title">follow us on</h3>
+						<div class="social">
+							<i class="fab fa-facebook-f"></i>
+							<i class="fab fa-instagram"></i>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- footer -->
+			<footer>
+				<div class="footer-wrap grid wide row">
+					<div class="footer-items contact col c-8">
+						<h3 class="news-title">Liên hệ</h3>
+						<ul class="footer-nav">
+							<li>
+								<i class="fas fa-map-marker-alt"></i>
+								<span>EAUT </span>
+							</li>
+							<li>
+								<i class="fas fa-phone-alt"></i>
+								<span>0900889989</span>
+							</li>
+							<li>&nbsp;</li>
+							<li>
+								<i class="fas fa-envelope"></i>
+								<span>info@thelittegirls.com</span>
+							</li>
+						</ul>
+					</div>
+					<div class="footer-items about-us col c-4">
+						<h3 class="news-title">về chúng tôi</h3>
+						<ul class="footer-nav">
+							<li><a href="" class="foot-link">Blog</a></li>
+							<li><a href="" class="foot-link">Giới thiệu</a></li>
+							<li><a href="" class="foot-link">Điều khoản</a></li>
+							<li><a href="" class="foot-link">Hướng dẫn mua hàng</a></li>
+							<li><a href="" class="foot-link">Kiểm tra đơn hàng</a></li>
+							<li><a href="" class="foot-link">Chính sách bảo mật</a></li>
+							<li><a href="" class="foot-link">Chính sách đỗi trả</a></li>
+							<li><a href="" class="foot-link">Chính sách vận chuyển</a></li>
+							<li><a href="" class="foot-link">Liên hệ</a></li>
+						</ul>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+		<!-- floating icon -->
+		<div id="fav-customer" class="float-items bottom">
+			<i class="fab fa-gratipay"></i>
+			<span>Khách hàng thân thiết</span>
+		</div>
+		<div class="float-items bottom" id="zalo">
+			<img src="./assets/img/zalo.svg" />
+		</div>
+		<div onclick="Top()" id="to-top" class="float-items bottom">
+			<i class="fas fa-arrow-up"></i>
+		</div>
+
+		<!-- modal-form -->
+		<div id="modal-form">
+			<div class="modal-wrap row">
+				<div id="user-form" class="col">
+					<h3 class="modal-title news-title text-center">Đăng nhập</h3>
+					<div class="modal-form">
+						<label for="account">Email</label>
+						<input type="email" name="account" placeholder="Email" required />
+						<p></p>
+						<label for="password">Mật khẩu</label>
+						<input
+							type="password"
+							name="password"
+							placeholder="Mật khẩu"
+							required
+						/>
+						<p></p>
+						<label name="phone" for="phone">Số điện thoại</label>
+						<input
+							id="phone"
+							type="text"
+							name="phone"
+							placeholder="Số điện thoại"
+							required
+							onkeypress="return isNumberKey(event)"
+						/>
+						<p></p>
+
+						<p class="account-more"></p>
+						<button class="action btn modal-btn">Đăng nhập</button>
+						<hr />
+						<div class="social-login google">
+							<i class="fab fa-google"></i>
+							<span>Tiếp tục với Google</span>
+						</div>
+						<div class="social-login facebook">
+							<i class="fab fa-facebook-f"></i>
+							<span>Tiếp tục với Facebook</span>
+						</div>
+					</div>
+				</div>
+
+				<!-- product modal-->
+				<div id="product-modal">
+					<div class="grid row">
+						<div class="col c-6">
+							<div class="product-img">
+								<img src="./assets/img/aophong2.png" alt="" />
+							</div>
+							<div class="feedback-img grid row">
+								<img
+									class="col c-3"
+									src="./assets/img/aophong2.png"
+									alt=""
+									class="feedback-items"
+								/>
+								<img
+									class="col c-3"
+									src="./assets/img/aophong2.png"
+									alt=""
+									class="feedback-items"
+								/>
+								<img
+									class="col c-3"
+									src="./assets/img/aophong2.png"
+									alt=""
+									class="feedback-items"
+								/>
+								<img
+									class="col c-3"
+									src="./assets/img/aophong2.png"
+									alt=""
+									class="feedback-items"
+								/>
+							</div>
+						</div>
+						<div class="col c-6">
+							<h3 class="news-title product-name">Áo polo dáng rộng Coffee</h3>
+							<p class="status">Tình trạng: <span>Còn hàng</span></p>
+							<p class="brand">Hãng sản xuất: <span>Sweet Girls</span></p>
+							<p class="type">Loại sản phẩm: <span>Tee</span></p>
+							<div class="modal-price-box">
+								<p class="price">420.000₫</p>
+								<p class="old-price">
+									Giá gốc: <span>450.000₫</span> <span>(-7%)</span>
+								</p>
+							</div>
+							<p class="product-desc">
+								Áo polo dáng rộng Coffe là một sản phẩm basic cao cấp và chất
+								lượng, với hoạ tiết thêu xù hình ly coffe một cách tinh
+							</p>
+							<div class="product-size">
+								<p class="size selected">M</p>
+								<p class="size">L</p>
+								<p class="size">XL</p>
+								<p class="size">XXL</p>
+							</div>
+							<div class="modal-product-action">
+								<label for="number">Số lượng</label>
+								<input
+									type="text"
+									value="1"
+									onkeypress="return isNumberKey(event)"
+								/>
+								<button class="action btn">Mua ngay</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- close modal -->
+				<div onclick="closeModal()" class="modal-back">
+					<i class="fas fa-angle-left"></i>
+				</div>
+			</div>
+		</div>
+
+		<!-- notificaction -->
+		<div class="notifications"></div>
+
+		<script src="./assets/scripts/validate.js"></script>
+		<script src="./assets/scripts/script.js"></script>
+		<!-- scripts -->
+	</body>
+</html>
